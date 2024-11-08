@@ -41,7 +41,7 @@ app.post("/login", (req: Request, res: Response) => {
 
   res.json({ accessToken, refreshToken });
 
-  // now the user can access data for some time with his refresh token. when it expires, he hits the /refresh endpoint
+  // now the user can access data for some time with his access token. when it expires, he hits the /refresh endpoint
 });
 
 // ------- Refresh -------
